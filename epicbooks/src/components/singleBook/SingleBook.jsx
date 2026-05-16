@@ -19,7 +19,7 @@ const SingleBook = ({book}) => {
         <Card.Text>
           {book.category}
         </Card.Text>
-        <Button onClick={()=>setSelected(!selected)} variant="primary">Aggiungi al carrello</Button>
+        <Button onClick={()=>setSelected(!selected)} variant="primary">Seleziona</Button>
       </Card.Body>
     </Card>
     {selected && <CommentArea 

@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react"
+import CommentList from "../CommentList/CommentList"
+import AddComment from "../AddComment/AddComment"
 
 const CommentArea = ({asin}) => {
     const [comment,setComment] = useState([])
@@ -31,7 +33,10 @@ const getComments = async() => {
     
 
     return (
-<div></div>
+  <div>
+    <CommentList comments={comment} />
+      <AddComment asin={asin} />
+  </div>
     )
 }
 
