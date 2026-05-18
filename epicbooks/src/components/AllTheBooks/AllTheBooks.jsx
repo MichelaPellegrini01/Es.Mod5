@@ -6,13 +6,13 @@ import romance from "../../data/romance.json"
 import scifi from "../../data/scifi.json"
 import {useState} from "react"
 import SingleBook from "../singleBook/SingleBook"
-import Form from 'react-bootstrap/Form';
 
 
 
-function AllTheBooks () {
+
+const AllTheBooks = ({form}) => {
     const [books, setBooks] = useState(fantasy)
-    const [form, setForm] = useState("")
+   
 
     return (
          <>
@@ -35,13 +35,7 @@ function AllTheBooks () {
 
         </Row>*/}
 
-          <Form.Control
-       type="text"
-       placeholder="Cosa stai cercando?"
-       value={form}
-       onChange={(e)=> setForm(e.target.value)}
-        />
-
+    
          <Row> 
 {books
 .filter((book) => book.title.toLowerCase().includes(form.toLowerCase()))
