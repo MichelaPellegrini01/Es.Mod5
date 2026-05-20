@@ -1,12 +1,12 @@
 import { useState } from "react"
 import { Form, Button } from "react-bootstrap"
 
-const AddComment = ({ asin }) => {
+const AddComment = ({ selected }) => {
 
   const [newComment, setNewComment] = useState({
     comment: "",
     rate: "",
-    elementId: asin
+    elementId: selected
   })
 
   const sendComment = async () => {
