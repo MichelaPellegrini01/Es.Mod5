@@ -24,7 +24,10 @@ const AddComment = ({ selected }) => {
               "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2YTA3MGViMWQ2M2FhMTAwMTUxM2RlNzIiLCJpYXQiOjE3Nzg4NDc0MDksImV4cCI6MTc4MDA1NzAwOX0.PM_qvBCPT-FuCeKz7g2EKr8KfsfY5nKSDY5Mt0KxNWs"
           },
 
-          body: JSON.stringify(newComment)
+          body: JSON.stringify({
+  ...newComment,
+  elementId: selected
+})
         }
       )
 
