@@ -14,7 +14,7 @@ const SingleBook = ({book, selected, setSelected}) => {
 
     return(
 <Col xs={12} md={4} lg={4} className="g-4" key={book.asin}>
-             <Card style={{ border: isSelected ? "2px solid red" : undefined}}>
+             <Card data-testid="bookCard" style={{ border: isSelected ? "2px solid aqua" : undefined}}>
        {loading && (
         <div className="d-flex justify-content-center p-3">
           <Spinner animation="border" variant="primary"/></div>
@@ -32,7 +32,7 @@ style={{display:loading?"none":"block"}}/>
           {book.category}
         </Card.Text>
         <Button onClick={()=>setSelected( isSelected ? null : book.asin)} variant="primary">{isSelected ? "Annulla":"Seleziona"}</Button>
-     <Button onClick={()=>navigate(`bookdetails/${book.asin}`)} variant="primary">Dettagli del Libro</Button>
+     <Button className="ms-2" onClick={()=>navigate(`bookdetails/${book.asin}`)} variant="primary">Dettagli del Libro</Button>
       </Card.Body>
     </Card>
 

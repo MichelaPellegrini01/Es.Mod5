@@ -1,11 +1,11 @@
 const SingleComment = ({ comment }) => {
   return (
-    <div className="border p-2 my-2">
-      <p>
-        <b>Voto:</b> {comment.rate}
+    <div data-testid="singleComment" className="border p-2 my-2">
+      <p className="voteResult">
+        <b className="vote">Voto:</b> {comment.rate}
       </p>
 
-      <p>{comment.comment}</p>
+      <p className="commentComment" >{comment.comment}</p>
     </div>
   )
 }

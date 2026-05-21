@@ -46,7 +46,7 @@ const AddComment = ({ selected }) => {
 
       <Form.Group className="mb-3">
 
-        <Form.Label>
+        <Form.Label className="titleForm">
           Cosa ne pensi?
         </Form.Label>
 
@@ -66,7 +66,7 @@ const AddComment = ({ selected }) => {
 
       <Form.Group className="mb-3">
 
-        <Form.Label>
+        <Form.Label className="titleForm">
           Voto
         </Form.Label>
 

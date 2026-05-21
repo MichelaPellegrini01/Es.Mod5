@@ -9,3 +9,33 @@
    
 }
 
+.navbarEdit {
+    background-color: rgb(211, 43, 226);
+}
+
+body {
+    background-color: rgb(119, 21, 128) !important;
+}
+
+.alertEdit {
+    background-color: aqua !important;
+}
+
+.commentComment {
+    color: white;
+}
+
+.vote,
+.titleForm {
+    color: aqua;
+}
+
+.voteResult {
+    color: white;
+}
+
+Button {
+    background-color: rgb(211, 43, 226) !important;
+    border-color: rgb(211, 43, 226)!important;
+}
+

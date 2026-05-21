@@ -9,13 +9,13 @@ const MyNavbar = ({form, setForm}) => {
   
   return (
     <>
-      <Navbar expand="lg" className="bg-body-tertiary">
+      <Navbar expand="lg" className=" navbarEdit" data-bs-theme="light">
 
         <Container>
 
-          <Navbar.Brand href="#home">
-            React-Bootstrap
-          </Navbar.Brand>
+          <Navbar.Brand href="/">
+Epicbooks          
+</Navbar.Brand>
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
 

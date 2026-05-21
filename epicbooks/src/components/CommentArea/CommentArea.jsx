@@ -33,7 +33,7 @@ const getComments = async() => {
     
 
     return (
-  <div>
+  <div data-testid="commentArea">
     <CommentList comments={comment} />
       <AddComment selected={selected} />
   </div>

@@ -19,25 +19,58 @@ const AllTheBooks = ({form}) => {
 
     return (
          <>
-        {/*<Row>
-<Button onClick={() => {
-        setBooks (fantasy)
-    }}>Fantasy</Button>
-<Button onClick={() => {
-        setBooks (history)
-    } }>History</Button>
-<Button onClick={() => {
-        setBooks (horror)
-    } }>Horror</Button>
-<Button onClick={() => {
-        setBooks (romance)
-    } }>Romance</Button>
-<Button onClick={() => {
-        setBooks (scifi)
-    }}>Sci-fi</Button>
+        <Row className="mb-4">
 
-        </Row>*/}
+  <div className="d-flex gap-2 flex-wrap">
 
+    <Button
+      variant="dark"
+      onClick={() => {
+        setBooks(fantasy)
+      }}
+    >
+      Fantasy
+    </Button>
+
+    <Button
+      variant="dark"
+      onClick={() => {
+        setBooks(history)
+      }}
+    >
+      History
+    </Button>
+
+    <Button
+      variant="dark"
+      onClick={() => {
+        setBooks(horror)
+      }}
+    >
+      Horror
+    </Button>
+
+    <Button
+      variant="dark"
+      onClick={() => {
+        setBooks(romance)
+      }}
+    >
+      Romance
+    </Button>
+
+    <Button
+      variant="dark"
+      onClick={() => {
+        setBooks(scifi)
+      }}
+    >
+      Sci-fi
+    </Button>
+
+  </div>
+
+</Row>
     
          <Row> 
 <Col sm={12} md={8} className="d-flex flex-wrap g-1">

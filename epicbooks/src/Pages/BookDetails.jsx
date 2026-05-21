@@ -8,9 +8,25 @@ import { Card,Badge,Row,Col, } from "react-bootstrap"
 import CommentArea from "../components/CommentArea/CommentArea"
 
 const BookDetails=()=>{
+
+   const books = [
+    ...fantasy,
+    ...history,
+    ...horror,
+    ...romance,
+    ...scifi
+  ]
     
 const {asin} = useParams()
-const book = fantasy.find((item)=>item.asin===asin)
+ const book = books.find(
+    (item) => item.asin === asin
+  )
+
+  if (!book) {
+    return (
+      <h1>Libro non trovato</h1>
+    )
+  }
 
 return (
         <>
